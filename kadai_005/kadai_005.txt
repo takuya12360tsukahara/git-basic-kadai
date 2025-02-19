@@ -1,0 +1,47 @@
+takuya@DESKTOP-332POTP MINGW64 ~
+$ mkdir git_challenge
+
+takuya@DESKTOP-332POTP MINGW64 ~
+$ cd git_challenge
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/takuya/git_challenge/.git/
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ echo "Hello,world" >> hello_world.txt
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ git commit -m "hello,world"
+[main (root-commit) 4e1a10f] hello,world
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next
+time Git touches it
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ git commit -m "こんにちは、世界！"
+[main e5f485e] こんにちは、世界！
+ 1 file changed, 2 insertions(+)
+
+takuya@DESKTOP-332POTP MINGW64 ~/git_challenge (main)
+$ git log --oneline
+e5f485e (HEAD -> main) こんにちは、世界！
+4e1a10f hello,world
